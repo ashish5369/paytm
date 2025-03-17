@@ -6,4 +6,8 @@ app.use(express.json());
 const userRouter = require("./user.js");
 router.use("/user", userRouter);
 
+
+const accountRouter = require("./account.js");
+router.use("/account", accountRouter);
+
 model.exports = router;
