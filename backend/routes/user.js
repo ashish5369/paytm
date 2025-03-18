@@ -9,7 +9,7 @@ const { authMiddleware } = require("../middleware")
 
 const signupSchema = zod.object({
     username: zod.string(),
-    passwrod: zod.string(),
+    password: zod.string(),
     firstName: zod.string(),
     password: zod.string()
 })
