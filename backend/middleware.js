@@ -24,7 +24,7 @@ const authMiddleware = (res, req, next) => {
     }
 }
 
-modules.export = {
+module.exports = {
 
     authMiddleware
 }

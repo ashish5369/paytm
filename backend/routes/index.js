@@ -1,8 +1,11 @@
 const express = require('express');
 const cors = require("cors");
+
 const router = express.Router();
-app.use(cors());
+const app = express();
 app.use(express.json());
+app.use(cors());
+
 const userRouter = require("./user.js");
 router.use("/user", userRouter);
 
@@ -10,4 +13,4 @@ router.use("/user", userRouter);
 const accountRouter = require("./account.js");
 router.use("/account", accountRouter);
 
-model.exports = router;
+module.exports = router;

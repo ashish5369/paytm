@@ -1,5 +1,4 @@
-const { default: mongoose } = require("mongoose");
-const mongopose = require("mongoose");
+const mongoose = require("mongoose");
 mongoose.connect("mongodb+srv://ashish:admin@cluster0.3a8r8.mongodb.net/paytm")
 
 const userSchema = new mongoose.Schema({
